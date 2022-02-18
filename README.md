@@ -1,8 +1,9 @@
 # Disk_Space
-
-I have created a free agent!
+Security block us again?!
+As you know WMI service isn't allowed.
+So I have created a free agent!
 You can run it through logon script or task scheduler with GPO.
-Basicly the script checks the volume space, if it's low, he will create a TXT file with the name of the user(WHOAMI /UPN).
+The script checks the volume space, if it's low, he will create a TXT file with the name of the user(WHOAMI /UPN).
 You will select where it should create the TXT, now you can check alreats, most important is to delete the TXT,  after you solved the space problem.
 
 Have fun, if you have any idea you are more welcomed to share.
