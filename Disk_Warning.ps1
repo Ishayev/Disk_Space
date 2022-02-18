@@ -1,6 +1,7 @@
 $a=get-volume -DriveLetter c
 
-if(1-$a.sizeremaining/$a.Size -gt 0.6)
+## If space in the volume is lower than 20% he will Create a TXT file. ##
+if(1-$a.sizeremaining/$a.Size -lt 0.2)
 {
 $c=(1-$a.sizeremaining/$a.Size)*100
 $diskinfo= New-Object PSObject
@@ -24,5 +25,5 @@ Function GetFileName([ref]$fileName)
 }
 $fileName = $null
 GetFileName([ref]$fileName)
-$diskinfo| % { new-object PSObject -Property $_} | out-file -filepath c:\test\$fileName
+$diskinfo| % { new-object PSObject -Property $_} | out-file -filepath X:\$fileName
 }
