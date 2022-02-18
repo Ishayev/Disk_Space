@@ -7,4 +7,5 @@ You will select where it should create the TXT, now you can check alreats, most 
 
 Have fun, if you have any idea you are more welcomed to share.
 
+In the file you will have details, so you can go to the spesific computer and handle the job.
 ![image](https://user-images.githubusercontent.com/96260271/154711504-55d482ae-80a2-424c-86ab-ed5b5dab98b6.png)
