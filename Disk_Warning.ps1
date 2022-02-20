@@ -1,9 +1,9 @@
 $a=get-volume -DriveLetter c
 
 ## If space in the volume is lower than 20% he will Create a TXT file. ##
-if(1-$a.sizeremaining/$a.Size -lt 0.2)
+if((($a.Size-$a.sizeremaining)/$a.size) -lt 0.2)
 {
-$c=(1-$a.sizeremaining/$a.Size)*100
+$c=(($a.Size-$a.sizeremaining)/$a.size)*100
 $diskinfo= New-Object PSObject
 $diskinfo= @()
 
